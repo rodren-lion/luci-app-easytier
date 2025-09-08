@@ -3,18 +3,11 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=easytier
 PKG_VERSION:=2.4.3
 
-ifeq ($(ARCH),mipsel)
-	APP_ARCH:=mipsel
-endif
-ifeq ($(ARCH),mips)
-	APP_ARCH:=mips
-endif
+
 ifeq ($(ARCH),arm)
 	APP_ARCH:=arm
 endif
-ifeq ($(BOARD),kirkwood)
-	APP_ARCH:=arm
-endif
+
 ifeq ($(ARCH),armv7)
 	APP_ARCH:=armv7
 endif
